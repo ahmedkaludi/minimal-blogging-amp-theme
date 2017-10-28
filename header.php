@@ -7,7 +7,7 @@
         <div class="right">
             <?php amp_sidebar(['action'=>'open-button']); ?>         
         </div>
-        
+
         <div class="clearfix"></div>
     </div><!-- /.header-section -->
 </header>
@@ -25,4 +25,4 @@
 <?php amp_search();?>
 <?php amp_sidebar(['action'=>'end']); ?>
 
-<div class="content-wrapper container">
+<div class="content-wrapper">
