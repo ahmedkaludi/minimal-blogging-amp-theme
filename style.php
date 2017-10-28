@@ -1,7 +1,7 @@
 /**** 
 * AMP Framework Reset
 *****/
-    body{ font-family: sans-serif; font-size: 16px; line-height:1.4; }
+    body{ font-family: 'Poppins', sans-serif; font-size: 16px; line-height:1.4; }
     ol, ul{ list-style-position: inside }
     p, ol, ul, figure{ margin: 0 0 1em; padding: 0; }
     a, a:active, a:visited{ color:#ed1c24; text-decoration: none }
@@ -66,7 +66,11 @@
 * AMP Sidebar
 *****/
     amp-sidebar {
-        width: 250px;
+        background: #333;
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 10%;
+        padding-bottom:20%;   
     }
 
     /* AMP Sidebar Toggle button */
@@ -79,8 +83,8 @@
         display: block;
         height: 2px;
         margin-bottom: 5px;
-        width: 22px;
-        background: #000;
+        width: 27px;
+        background: #fff;
     }
     .amp-sidebar-toggle span:nth-child(2){
         top: 7px;
@@ -88,15 +92,55 @@
     .amp-sidebar-toggle span:nth-child(3){
         top:14px;
     }
+    .amp-sidebar-close {
+        display: inline-block;
+        padding: 15px 10px;
+        color: #fff;
+        font-size: 30px;
+        float:right;
+        cursor: pointer;
+    }
+    .amp-menu {
+        list-style-type: none;
+        margin: 20% 0 0 0;
+        padding: 0;
+    }
+    .amp-menu li a{
+        color:#fff;
+        font-family: 'Poppins', sans-serif;
+    }
+    .amp-menu li:hover a{
+        background: transparent none repeat scroll 0 0;
+    }
+    .amp-search-wrapper{
+        padding-bottom:40px;
+    }
+    .amp-search-wrapper #s {
+        border: none;
+        width: 80%;
+        background: transparent;
+        border-bottom: 1px solid #8a7e7e;
+        padding: 10px;
+        color:#fff;
+        font-size:15px;
+    }
+    #amp-search-submit {
+        cursor: pointer;
+        background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iI0ZGRkZGRiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+        border: none;
+        text-indent: -999px;
+        background-size: 18px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 17px;
+        padding: 10px;
+    }
 
     /* AMP Sidebar close button */
-    .amp-sidebar-close{
-        background: #333;
-        display: inline-block;
-        padding: 5px 10px;
-        font-size: 12px;
-        color: #fff;
-    }
+
 
 /****
 * AMP Navigation Menu with Dropdown Support
@@ -133,11 +177,16 @@
 /**** 
 * Header
 *****/
+    .header{
+        background:rgba(255,61,37,.9);
+        padding:20px 0px;
+    }
+    .header-section .left, .header-section .right{
+        line-height:0;
+        display:block;
+    }
     .header h1{
         font-size: 1.5em;
-    }
-    .header .right{
-        margin: 16px 5px 0px 5px;
     }
     .amp-phone, .amp-social, .amp-sidebar-button{
         display:inline-flex 
@@ -149,8 +198,10 @@
         margin: 0px 19px;
     }
     .amp-sidebar-button{
-        top: 6px;
+        top: 10px;
     }
+}
+
 
 
 /**** 

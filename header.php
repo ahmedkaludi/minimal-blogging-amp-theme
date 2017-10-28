@@ -1,16 +1,15 @@
 <?php amp_header_core() ?>
- <header class="header container">
-        
+ <header class="header">
+    <div class="header-section container">
         <div class="left">
             <?php amp_logo(); ?>
         </div>
-        
         <div class="right">
             <?php amp_sidebar(['action'=>'open-button']); ?>         
         </div>
         
         <div class="clearfix"></div>
-    
+    </div><!-- /.header-section -->
 </header>
 
 
@@ -19,7 +18,9 @@
     'layout'=>'nodisplay',
     'side'=>'right'
 ] ); ?>
-<?php amp_sidebar(['action'=>'close-button']); ?>
+<div class="amp-close-btn">
+    <?php amp_sidebar(['action'=>'close-button']); ?>
+</div>
 <?php amp_menu(); ?>
 <?php amp_search();?>
 <?php amp_sidebar(['action'=>'end']); ?>
