@@ -386,16 +386,52 @@
 * Footer
 *****/
     .footer{
-        padding: 30px 0px 20px 0px;
+        margin:30% 0px;
         font-size: 12px;
         text-align: center;
     }
+    .footer .amp-logo{
+        margin-bottom:40px;
+    }
+    .footer .amp-sidebar-button:after{
+        content:"Menu";
+        display:inline-block;
+        color:#000;
+        font-size:14px;
+        padding: 10px 40px 6px;
+    }
+    .footer .amp-sidebar-button{
+        top:0;
+    }
+    .menu{
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #000;
+        margin-bottom: 60px;
+    }
+    .amp-sidebar-toggle span{
+        display:none;
+    }
+    .amp-social li:before{
+        color:#000;
+    }
+    .amp-social{
+        display:block;
+        margin-bottom:20px;
+    }
+    .amp-social li {
+        font-size: 18px;
+        margin: 0px 10px 10px 0px;
+    }
+    .icon-twitter:before, .icon-facebook:before, .icon-pinterest:before, .icon-google-plus:before, .icon-linkedin:before,
+    .icon-youtube-play:before, .icon-instagram:before, .icon-reddit-alien:before, .icon-vk:before, .icon-snapchat-ghost:before,
+    .icon-tumblr:before{
+        background: transparent;
+    }
+    .rights-reserved{
+        font-size:10px;
+    }
 
-@media(max-width:500px){
-    .featured-image amp-img img{
-    margin-left:-25%;
-}
-}
 
 /****
 * RTL Styles
