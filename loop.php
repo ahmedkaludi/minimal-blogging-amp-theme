@@ -16,5 +16,7 @@
 		</div>
 	</div>
 	<?php endwhile; amp_loop('end');  ?>
-	<?php amp_pagination(); ?>
+	<div class="container">
+		<?php amp_pagination(); ?>
+	</div>
 	
