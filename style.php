@@ -249,7 +249,7 @@
         width: 60px;
     }
     .loop-post h2{
-        font-size:30px;
+        font-size:28px;
         font-weight: 600;
         line-height: 1.3;
         margin:0;
@@ -261,9 +261,17 @@
     }
     .loop-post p{
         font-size: 16px;
-        line-height: 26px;
+        line-height: 24px;
         color: #fff;
         margin-top: 25px;
+    }
+    .featured-overlay {
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 22%, rgba(0, 0, 0, .5) 90%) repeat scroll 0 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
 
