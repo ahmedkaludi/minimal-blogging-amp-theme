@@ -1,7 +1,6 @@
 <?php while(amp_loop('start')): ?>
 	<?php $args = array("tag"=>'div',"tag_class"=>'image-container','image_size'=>'large', 'responsive'=> false); ?>
 	<div class="loop-post-list">
-		
 		<div class="featured-image">
 			<?php amp_loop_image($args); ?>
 		</div>

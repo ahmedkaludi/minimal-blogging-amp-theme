@@ -212,7 +212,7 @@
         width: 100%;
         margin: 6px 0px;
     }
-    .featured-image, .loop-post-list{
+    .featured-image, .loop-post-list, .single-page-amp{
         position:relative;
         width:100%;
         text-align: center;
@@ -344,7 +344,14 @@
         width: 100px;
         margin: 0px 10px 0px 0px;
     }
-
+    .amp-author amp-img{
+        border-radius:50%;
+        float:left;
+        margin-right:10px;
+    }
+    .amp-author > span{
+        display:block;
+    }
 
 /**** 
 * Comments
@@ -409,15 +416,12 @@
         border: 1px solid #000;
         margin-bottom: 60px;
     }
-    .amp-sidebar-toggle span{
-        display:none;
-    }
     .amp-social li:before{
         color:#000;
     }
     .amp-social{
         display:block;
-        padding:0px 6%;
+        padding:0px 10%;
     }
     .amp-social li {
         font-size: 18px;
@@ -441,3 +445,10 @@
 * RTL Styles
 *****/
     <?php  if( is_rtl() ) {?> <?php } ?>
+@media (max-width:768px){
+.single-page-amp .amp-featured-image amp-img {
+    width: 100%;
+    height: 100%;
+}
+
+}
