@@ -398,7 +398,7 @@
         display:inline-block;
         color:#000;
         font-size:14px;
-        padding: 10px 40px 6px;
+        padding: 13px 55px 10px;
     }
     .footer .amp-sidebar-button{
         top:0;
@@ -417,7 +417,7 @@
     }
     .amp-social{
         display:block;
-        margin-bottom:20px;
+        padding:0px 6%;
     }
     .amp-social li {
         font-size: 18px;
@@ -429,7 +429,11 @@
         background: transparent;
     }
     .rights-reserved{
-        font-size:10px;
+        font-size:0.5rem;
+    }
+    .rights-reserved a {
+        color: #000;
+        text-decoration:underline;
     }
 
 
