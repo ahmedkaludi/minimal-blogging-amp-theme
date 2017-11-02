@@ -21,8 +21,10 @@
 <div class="amp-close-btn">
     <?php amp_sidebar(['action'=>'close-button']); ?>
 </div>
-<?php amp_menu(); ?>
-<?php amp_search();?>
+<div class="amp-main-menu">
+    <?php amp_menu(); ?>
+    <?php amp_search();?>
+</div>
 <?php amp_sidebar(['action'=>'end']); ?>
 
 <div class="content-wrapper">
