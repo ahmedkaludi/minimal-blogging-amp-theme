@@ -295,10 +295,11 @@
         color: #fff;
     }
     .loop-category li:after{
-        content:"|";
+        content:"/";
         display:inline-block;
         color:#ffffff;
         padding-left:10px;
+        font-weight:normal;
     }
     .loop-category li:last-child{
         margin-right:0;
@@ -456,11 +457,10 @@
         text-decoration: underline;
     }
     .amp-single-postcontent p{
-        font-size:17px;
-        color:#333333;
-        line-height: 30px;
+        font-size:15px;
+        color:#222;
+        line-height: 26px;
         font-weight: 400;
-        letter-spacing: 0.003em;
     }
     .amp-single-postcontent h2{
         font-size: 27px;
