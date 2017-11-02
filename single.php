@@ -15,11 +15,15 @@
 </div>
 <div class="container">
 	<?php 
-	$args = $arrayName = array('avatar' => true, 
-								'author_prefix' =>'by',
-	amp_author_box($args); ?>
-	<?php amp_content(); ?>
-	<?php amp_comments();?>
-	<?php amp_related_posts(); ?>
+		$args = $arrayName = array('avatar' => true, 
+									'author_prefix' =>'by',
+									'avatar_size' => 80);
+		amp_author_box($args); ?>
+	<div class="amp-single-postcontent">
+		<?php amp_content(); ?>
+	</div>
+	<div class="amp-single-related-posts">
+		<?php amp_related_posts(); ?>
+	</div>
 	<?php amp_footer()?>
 </div>
