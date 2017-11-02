@@ -14,7 +14,10 @@
 	</div>
 </div>
 <div class="container">
-	<?php amp_author_box(); ?>
+	<?php 
+	$args = $arrayName = array('avatar' => true, 
+								'author_prefix' =>'by',
+	amp_author_box($args); ?>
 	<?php amp_content(); ?>
 	<?php amp_comments();?>
 	<?php amp_related_posts(); ?>
