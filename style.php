@@ -264,7 +264,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .loop-post h2{
         font-size:28px;
@@ -434,6 +434,47 @@
     }
 
 /**** 
+* Archive
+*****/
+.amp-archive{
+    text-align:center;
+}
+.amp-archive-info {
+    padding: 30px;
+    margin-top: 25px;
+}
+.amp-archive-info p{
+    font-style:italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+.amp-archive-info h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin:0px 0px 20px 0px;
+    position:relative;
+}
+
+.amp-archive-info h3:after{
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:25px auto;
+    width:60px;
+    border-bottom:2px solid #000;
+}
+.amp-archive-desc{
+    margin-top:30px;
+}
+.amp-archive-desc {
+    margin-top: 40px;
+    display: inline-block;
+}
+/**** 
 * Comments
 *****/
 	.comments_list ul{
@@ -534,5 +575,6 @@
     width: 100%;
     height: 100%;
 }
+
 
 }
