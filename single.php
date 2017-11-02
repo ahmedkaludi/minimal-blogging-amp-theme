@@ -9,6 +9,7 @@
 		    <div class="container">
 			    <?php amp_loop_category(); ?>
 			    <?php amp_loop_title(); ?>
+			    <?php amp_date(); ?>
 			</div>
 		</div>
 	</div>

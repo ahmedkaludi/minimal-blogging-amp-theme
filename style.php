@@ -447,6 +447,7 @@
         font-style:italic;
         font-weight:500;
         color:#959595;
+        font-family: 'Libre Baskerville', serif;
     }
     .author-name a{
         color: #959595;
@@ -455,6 +456,7 @@
         padding-left: 5px;
         letter-spacing: 1px;
         text-decoration: underline;
+        font-family: 'Poppins', sans-serif;
     }
     .amp-single-postcontent p{
         font-size:15px;
@@ -462,13 +464,28 @@
         line-height: 26px;
         font-weight: 400;
     }
-    .amp-single-postcontent h2{
-        font-size: 27px;
-        font-weight: 600;
-        line-height: 32px;;
-        margin-top: 96px;
-        margin-bottom: 48px;
-        color:#333333;
+    .amp-single-postcontent figure{
+        margin:30px 0px;
+    }
+    .amp-single-postcontent ul li{
+        position: relative;
+        padding-left: 30px;
+        list-style: none;
+        margin-bottom:12px;
+    }
+    .amp-single-postcontent ul li:before{
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 10px;
+        margin-top: -3px;
+        width: 6px;
+        height: 6px;
+        overflow: hidden;
+        background-color: #ff3d25;
+    }
+    .amp-single-postcontent ol li{
+        display:list-item;
     }
     .amp-single-postcontent blockquote{
         background: transparent;
@@ -486,6 +503,17 @@
         font-size: 60px;
         line-height: 86px;
         text-align: center;
+    }
+    .loop-date{
+        background: #ff3d25;
+        display: inline-block;
+        margin-top: 12px;
+        color: #fff;
+        font-size: 12px;
+        padding: 6px 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
     }
 
 /**** 
@@ -567,7 +595,7 @@
 * Footer
 *****/
     .footer{
-        margin:30% 0px;
+        margin:100px 0px;
         font-size: 12px;
         text-align: center;
     }
