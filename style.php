@@ -168,13 +168,13 @@
     }
     .amp-menu li a{
         color:#fff;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins';
     }
     .amp-menu li:hover a{
         background: transparent none repeat scroll 0 0;
     }
     .amp-search-wrapper{
-        padding-bottom:40px;
+        padding:40px 0px;
     }
     .amp-search-wrapper #s {
         border: none;
