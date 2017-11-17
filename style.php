@@ -1,7 +1,7 @@
 /**** 
 * AMP Framework Reset
 *****/
-    body{ font-family: 'Poppins', sans-serif; font-size: 16px; line-height:1.4; }
+    body{ font-family: 'Poppins'; font-size: 16px; line-height:1.4; }
     ol, ul{ list-style-position: inside }
     p, ol, ul, figure{ margin: 0 0 1em; padding: 0; }
     a, a:active, a:visited{ color:#ed1c24; text-decoration: none }
@@ -51,6 +51,65 @@
     amp-carousel > amp-img > img {
         object-fit: contain;
     }
+
+/****
+* Font Family
+*****/
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src:  local('LibreBaskerville Regular'), local('LibreBaskerville-Regular'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    src:  local('LibreBaskerville Italic'), local('LibreBaskerville-Italic'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/LibreBaskerville-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    src:  local('LibreBaskerville Bold'), local('LibreBaskerville-Bold'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/LibreBaskerville-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src:  local('Poppins-Light'), local('Poppins-Light'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src:  local('Poppins Regular'), local('Poppins-Regular'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src:  local('Poppins Medium'), local('Poppins-Medium'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src:  local('Poppins SemiBold'), local('Poppins-SemiBold'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src:  local('Poppins Bold'), local('Poppins-Bold'), url('<?php echo plugin_dir_url(__FILE__) ?>fonts/Poppins-Bold.ttf');
+}
 
 
 /****
@@ -323,7 +382,7 @@
     }
     .loop-post h2{
         font-size:27px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.38;
         margin:50px 0px 0px 0px;
         font-family: 'Libre Baskerville', serif;
