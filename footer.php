@@ -1,12 +1,12 @@
 </div>
 <footer class="footer">
-	<div class="container">
+	<div class="cntr">
 		<?php amp_logo(); ?>
 		<div class="menu">
 			<?php amp_sidebar(['action'=>'open-button']); ?>
 		</div>
 		<?php amp_social(); ?>
-		<div class="rights-reserved"> 
+		<div class="rts"> 
 			<?php amp_non_amp_link(); ?>
 		</div>
 	</div><!-- /.container -->

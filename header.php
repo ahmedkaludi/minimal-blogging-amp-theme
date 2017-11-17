@@ -1,6 +1,6 @@
 <?php amp_header_core() ?>
  <header class="header">
-    <div class="header-section container">
+    <div class="head-sec cntr">
         <div class="left">
             <?php amp_logo(); ?>
         </div>
@@ -21,7 +21,7 @@
 <div class="amp-close-btn">
     <?php amp_sidebar(['action'=>'close-button']); ?>
 </div>
-<div class="amp-main-menu">
+<div class="main-menu">
     <?php amp_menu(); ?>
     <?php amp_search();?>
 </div>

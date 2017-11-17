@@ -1,12 +1,12 @@
 <?php amp_header(); ?>
 	<?php $args = array("tag"=>'div',"tag_class"=>'image-container','image_size'=>'large', 'responsive'=> false); ?>
-<div class="single-page-amp">
-	<div class="featured-image">
+<div class="single">
+	<div class="feat-img">
 		<?php amp_featured_image($args);?>
 	</div>
-	<div class="featured-overlay">
-		<div class="loop-post">
-		    <div class="container">
+	<div class="feat-lay">
+		<div class="lp">
+		    <div class="cntr">
 			    <?php amp_loop_category(); ?>
 			    <?php amp_loop_title(); ?>
 			    <?php amp_date(); ?>
@@ -14,22 +14,22 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="cntr">
 	<?php 
 		$args = $arrayName = array('avatar' => true, 
 									'author_prefix' =>'by',
 									'avatar_size' => 80);
 		amp_author_box($args); ?>
-	<div class="amp-single-postcontent">
+	<div class="single-cntn">
 		<?php amp_content(); ?>
 	</div>
 </div>
 <?php
 	$my_query = related_post_loop_query();
   if( $my_query->have_posts() ) { ?>
-    <div class="amp-related-posts">
+    <div class="rlp">
       <ul class="clearfix">
-        <div class="container"><?php ampforwp_related_post(); ?></div>
+        <div class="cntr"><?php ampforwp_related_post(); ?></div>
         <?php
           while( $my_query->have_posts() ) {
             $my_query->the_post();
@@ -38,9 +38,9 @@
             <div class="rlp-image">     
                  <?php ampforwp_get_relatedpost_image('full');?>
 			</div>
-			<div class="featured-overlay">
+			<div class="feat-lay">
 				<div class="rlp-cnt">
-					<div class="container">
+					<div class="cntr">
 						<?php ampforwp_get_relatedpost_content($argsdata); ?> 
 		            </div>
 		        </div>

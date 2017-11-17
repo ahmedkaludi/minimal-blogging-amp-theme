@@ -1,6 +1,6 @@
 <?php amp_header() ?>
-<div class="container">
-	<div class="amp-archive-info">
+<div class="cntr">
+	<div class="arch-info">
 		<?php amp_archive_title(); ?>
 	</div>
 </div>
