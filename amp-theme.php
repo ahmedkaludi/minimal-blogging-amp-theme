@@ -7,7 +7,7 @@ Version: 1.0
 Author: AMPforWP Team
 Author URI: http://ampforwp.com/amp-theme-framework
 License: GPL2
-AMP: AMP Theme Minimal blogging
+AMP: Minimal blogging
 */
 
 // Exit if accessed directly.

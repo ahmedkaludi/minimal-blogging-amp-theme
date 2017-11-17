@@ -23,6 +23,10 @@
 	<div class="single-cntn">
 		<?php amp_content(); ?>
 	</div>
+	<div class="cmts">
+		<?php amp_comments();?>
+	</div><!-- /.comments-part -->
+		
 </div>
 <?php
 	$my_query = related_post_loop_query();
