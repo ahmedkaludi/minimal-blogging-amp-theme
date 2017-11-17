@@ -405,116 +405,162 @@
 * Single
 *****/
     /** Related Posts **/
-    .amp-related-posts ul{
-        list-style-type:none;
-    }
-    .amp-related-posts ul li{
-        display: inline-block;
-        line-height: 1.3;
-        margin-bottom: 5px;
-    }
-    .amp-related-posts amp-img{
-        float: left;
-        width: 100px;
-        margin: 0px 10px 0px 0px;
-    }
-    .amp-author amp-img{
-        border-radius:50%;
-        float:left;
-        margin-right:30px;
-    }
-    .amp-author > span{
-        display:block;
-    }
-    .amp-author {
-        width:100%;
-        display:inline-block;
-        margin:30px 0px;
-    }
-    .author-name:before{
-        content:"";
-        display:block;
-        border-top:2px solid #959595;
-        width:65px;
-        padding-bottom:10px;
-    }
-    .author-details, .amp-author-image  {
-        display:inline-block;
-        vertical-align:middle;
-    }
-    .author-name{
-        font-size:14px;
-        font-style:italic;
-        font-weight:500;
-        color:#959595;
-        font-family: 'Libre Baskerville', serif;
-    }
-    .author-name a{
-        color: #959595;
-        font-style: normal;
-        text-transform: uppercase;
-        padding-left: 5px;
-        letter-spacing: 1px;
-        text-decoration: underline;
-        font-family: 'Poppins', sans-serif;
-    }
-    .amp-single-postcontent p{
-        font-size:15px;
-        color:#222;
-        line-height: 26px;
-        font-weight: 400;
-    }
-    .amp-single-postcontent figure{
-        margin:30px 0px;
-    }
-    .amp-single-postcontent ul li{
-        position: relative;
-        padding-left: 30px;
-        list-style: none;
-        margin-bottom:12px;
-    }
-    .amp-single-postcontent ul li:before{
-        position: absolute;
-        content: "";
-        top: 10px;
-        left: 10px;
-        margin-top: -3px;
-        width: 6px;
-        height: 6px;
-        overflow: hidden;
-        background-color: #ff3d25;
-    }
-    .amp-single-postcontent ol li{
-        display:list-item;
-    }
-    .amp-single-postcontent blockquote{
-        background: transparent;
-    }
-    .amp-single-postcontent blockquote:before{
-        display: block;
-        width: 48px;
-        height: 48px;
-        margin-bottom: 24px;
-        content: "“";
-        background-color: #1e2122;
-        color: #fff;
-        font-family: 'Libre Baskerville', serif;
-        font-weight: 600;
-        font-size: 60px;
-        line-height: 86px;
-        text-align: center;
-    }
-    .loop-date{
-        background: #ff3d25;
-        display: inline-block;
-        margin-top: 12px;
-        color: #fff;
-        font-size: 12px;
-        padding: 6px 22px;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
+.amp-related-posts{
+    margin-top:50px;
+}
+.amp-related-posts h3 {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #333;
+    letter-spacing: 1px;
+}
+.amp-related-posts .amp-author {
+    display:none;
+}
+.amp-related-posts ul{
+    list-style-type:none;
+}
+.amp-related-posts ul li{
+    width: 100%;
+    position: relative;
+}
+.amp-related-posts amp-img{
+    width: 100%;
+    display:inline-block;
+}
+.rlp-image{
+    position: relative;
+    height: 80vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.rlp-cnt{
+    position: absolute;
+    top: 30px;
+    bottom:auto;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align:center;
+}
+.related_link{
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.38;
+    margin: 50px 0px 0px 0px;
+    font-family: 'Libre Baskerville', serif;
+}
+.related_link a{
+    color:#ffffff;
+}
+.related_link p{
+    color:#ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 25px;
+    font-weight: 300;
+}
+.amp-author amp-img{
+    border-radius:50%;
+    float:left;
+    margin-right:30px;
+}
+.amp-author > span{
+    display:block;
+}
+.amp-author {
+    width:100%;
+    display:inline-block;
+    margin:30px 0px;
+}
+.author-name:before{
+    content:"";
+    display:block;
+    border-top:2px solid #959595;
+    width:65px;
+    padding-bottom:10px;
+}
+.author-details, .amp-author-image  {
+    display:inline-block;
+    vertical-align:middle;
+}
+.author-name{
+    font-size:14px;
+    font-style:italic;
+    font-weight:500;
+    color:#959595;
+    font-family: 'Libre Baskerville', serif;
+}
+.author-name a{
+    color: #959595;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+}
+.amp-single-postcontent p{
+    font-size:15px;
+    color:#222;
+    line-height: 26px;
+    font-weight: 400;
+}
+.amp-single-postcontent figure{
+    margin:30px 0px;
+}
+.amp-single-postcontent ul li{
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+    margin-bottom:12px;
+}
+.amp-single-postcontent ul li:before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    overflow: hidden;
+    background-color: #ff3d25;
+}
+.amp-single-postcontent ol li{
+    display:list-item;
+}
+.amp-single-postcontent blockquote{
+    background: transparent;
+}
+.amp-single-postcontent blockquote:before{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+    content: "“";
+    background-color: #1e2122;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 86px;
+    text-align: center;
+}
+.loop-date{
+    background: #ff3d25;
+    display: inline-block;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
 
 /**** 
 * Archive
@@ -652,7 +698,7 @@
 *****/
     <?php  if( is_rtl() ) {?> <?php } ?>
 @media (max-width:768px){
-.single-page-amp .amp-featured-image amp-img {
+.single-page-amp .amp-featured-image amp-img, .amp-related-posts amp-img {
     width: 175%;
     height: 100%;
 }
