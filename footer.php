@@ -1,7 +1,6 @@
 </div>
 <footer class="footer">
 	<div class="cntr">
-		<?php amp_logo(); ?>
 		<div class="menu">
 			<?php amp_sidebar(['action'=>'open-button']); ?>
 		</div>
