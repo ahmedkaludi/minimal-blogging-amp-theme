@@ -1,9 +1,13 @@
 </div>
 <footer class="footer">
 	<div class="cntr">
+		<?php 
+			global $redux_builder_amp;
+			if(isset($redux_builder_amp['minimalblog-menu']) && $redux_builder_amp['minimalblog-menu']==1){?>    
 		<div class="menu">
 			<?php amp_sidebar(['action'=>'open-button']); ?>
 		</div>
+		<?php }?>
 		<?php amp_social(); ?>
 		<div class="rts"> 
 			<?php amp_non_amp_link(); ?>

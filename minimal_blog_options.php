@@ -29,7 +29,7 @@ if ( ! function_exists( 'ampforwp_minimalblog_theme_settings' ) ) {
                         'subtitle'  => __('Choose the color for title, anchor link','ampminimalblogtheme'),
                         'type'      => 'color_rgba',
                         'default'   => array(
-                             'color'     => '#ed1c24',
+                        'rgba'      => '(255,61,37,1)',
                          ),
                 ),
 
@@ -59,20 +59,6 @@ if ( ! function_exists( 'ampforwp_minimalblog_theme_settings' ) ) {
                         'type'  => 'switch',
                         'title' => __('Social Icons', 'ampminimalblogtheme'),
                         'subtitle'  => __('Switch to show/hide Social Icons', 'ampminimalblogtheme'),
-                        'default'   => 1
-                ),
-                array(
-                        'id'    => 'minimalblog-comment',
-                        'type'  => 'switch',
-                        'title' => __('Comments', 'ampminimalblogtheme'),
-                        'subtitle'  => __('Switch to show/hide Comments', 'ampminimalblogtheme'),
-                        'default'   => 1
-                ),
-                array(
-                        'id'    => 'minimalblog-comment',
-                        'type'  => 'switch',
-                        'title' => __('Comments', 'ampminimalblogtheme'),
-                        'subtitle'  => __('Switch to show/hide Comments', 'ampminimalblogtheme'),
                         'default'   => 1
                 ),
                 array(
