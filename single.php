@@ -23,6 +23,9 @@
 	<div class="single-cntn">
 		<?php amp_content(); ?>
 	</div>
+	<div  class="single-sc-ic">
+		<?php amp_social(); ?>
+	</div>
 	<div class="cmts">
 		<?php amp_comments();?>
 	</div><!-- /.comments-part -->
