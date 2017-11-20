@@ -292,11 +292,58 @@ if(is_single()){ ?>
 .cmts .comment-metadata a{color:#333}
 .comment-content{margin-top:10px}
 .comment-content p{font-size:12px;color:#000;line-height:19px}
-.amp-comment-button a{color:#111;border:1px solid #000;display:inline-block;padding:9px 32px 10px;-webkit-transition-property: color;transition-property: color;-webkit-transition-duration: 0.3s;transition-duration: 0.3s;}
-.amp-comment-button:before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:rgba(255,61,37,1);-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 50%;transform-origin:0 50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
-.amp-comment-button:hover:before,.amp-comment-button:focus:before,.amp-comment-button:active:before{-webkit-transform:scaleX(1);transform:scaleX(1)}
-.amp-comment-button{display:inline-block;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;font-size:14px;margin:0 auto;text-align: center;width: 100%;}
-.amp-comment-button a:hover{color:#fff;}
+.amp-comment-button a {
+    color: #111;
+    border: 1px solid #000;
+    display: inline-block;
+    padding: 9px 32px 10px;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.amp-comment-button a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 61, 37, 1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+.amp-comment-button a:hover{
+    color:#fff;
+}
+.amp-comment-button{
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.amp-comment-button a{
+     display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+}
+.amp-comment-button a:hover:before,
+.amp-comment-button a:focus:before,
+.amp-comment-button a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
 <?php } ?>
 
 @media (max-width:768px){
