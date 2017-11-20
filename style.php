@@ -299,10 +299,6 @@ if(is_single()){ ?>
 .amp-comment-button a:hover{color:#fff;}
 <?php } ?>
 
-/****
-* RTL Styles
-*****/
-    <?php  if( is_rtl() ) {?> <?php } ?>
 @media (max-width:768px){
 .single .amp-featured-image amp-img{width:175%;height:100%}
 .rlp ul li {width: 100%;float: none}
@@ -349,3 +345,8 @@ if(is_single()){ ?>
 }
 .related_link {font-size: 18px;}
 }
+
+/****
+* RTL Styles
+*****/
+    <?php  if( is_rtl() ) {?> <?php } ?>
