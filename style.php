@@ -4,7 +4,11 @@
 body{ font-family: 'Poppins'; font-size: 16px; line-height:1.4; }
 ol, ul{ list-style-position: inside }
 p, ol, ul, figure{ margin: 0 0 1em; padding: 0; }
-a, a:active, a:visited{ color:#ed1c24; text-decoration: none }
+a, a:active, a:visited{ 
+<?php if($redux_builder_amp['minimalblog-color-scheme']['rgba']){?>
+    color: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?>;
+    <?php } else { ?> color:rgba(255,61,37,1); <?php } ?>
+text-decoration: none }
 a:hover, a:active, a:focus{}
 pre{ white-space: pre-wrap;}
 .left{float:left}
@@ -232,7 +236,10 @@ if(is_single()){ ?>
 .single-cntn p{font-size:15px;color:#222;line-height:26px;font-weight:400}
 .single-cntn figure{margin:30px 0px}
 .single-cntn ul li{position:relative;padding-left:30px;list-style:none;margin-bottom:12px}
-.single-cntn ul li:before{position:absolute;content:"";top:10px;left:10px;margin-top:-3px;width:6px;height:6px;overflow:hidden;background-color:#ff3d25}
+.single-cntn ul li:before{position:absolute;content:"";top:10px;left:10px;margin-top:-3px;width:6px;height:6px;overflow:hidden;
+<?php if($redux_builder_amp['minimalblog-color-scheme']['rgba']){?>
+    background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?>;
+    <?php } else { ?> background:rgba(255,61,37,1); <?php } ?>}
 .single-cntn ol li{display:list-item}
 .single-cntn blockquote{background:transparent}
 .single-cntn blockquote:before{display:block;width:48px;height:48px;margin-bottom:24px;content:"“";background-color:#1e2122;color:#fff;font-family:'Libre Baskerville', serif;font-weight:600;font-size:60px;line-height:86px;text-align:center}
@@ -304,7 +311,11 @@ if(is_single()){ ?>
 .comment-meta amp-img{border-radius:50%;margin-right:10px;float:left}
 .cmts{width:100%;display:inline-block;clear:both;margin-top:40px}
 .cmts h3{margin:0;font-size:14px;padding-bottom:5px;border-bottom:2px solid #eee;font-weight:600}
-.cmts h3:after{content:"";display:block;width:125px;border-bottom:2px solid rgba(255,61,37,1);position:relative;top:7px}
+.cmts h3:after{content:"";display:block;width:125px;
+<?php if($redux_builder_amp['minimalblog-color-scheme']['rgba']){?>
+    border-bottom:2px solid <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?>;
+    <?php } else { ?> border-bottom:2px solid rgba(255,61,37,1); <?php } ?>
+position:relative;top:7px}
 .cmts ul{margin-top:16px}
 .cmts ul li{list-style:none;margin-bottom:25px}
 .cmts .comment-author.vcard .says{display:none}
