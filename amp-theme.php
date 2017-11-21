@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Minimal Blogging Theme for AMP
-Plugin URI: https://wordpress.org/plugins/accelerated-mobile-pages/
-Description: Create AMP Themes easily with help of AMP Framework
+Plugin URI: https://ampforwp.com/demo/minimal-blog/amp/
+Description: Create a Minimal Blogging AMP theme with ease.
 Version: 1.0
 Author: AMPforWP Team
-Author URI: http://ampforwp.com/amp-theme-framework
+Author URI: http://ampforwp.com
 License: GPL2
 AMP: Minimal blogging
 */
