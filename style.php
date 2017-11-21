@@ -97,6 +97,8 @@ amp-sidebar{background:#333;width:100%;padding-left:20%;padding-right:10%;paddin
 .main-menu ul li.menu-item-has-children:after{content:"";background:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiNGRkZGRkYiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat;background-size:16px;display:inline-block;width:16px;height:16px;top:10px}
 .main-menu ul li.menu-item-has-children:hover:after{-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);top:-10px;right:20px}
 .main-menu .amp-menu li:hover li:hover>a{background:#333}
+.amp-logo h1 {font-weight: normal;font-size: 23px;}
+.amp-logo h1 a{color: #ffffff;}
 
 /**** 
 * Footer
@@ -292,6 +294,7 @@ background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?
 .single .loop-category:after{top:16px}
 .lp h2{margin:25px 0px 0px 0px}
 .lp p{font-size:13px;color:#fffc;}
+.amp-logo h1 {font-size: 20px;}
 
 }
 
@@ -300,7 +303,7 @@ background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?
 .lp-list:hover .loop-category:after{top:150%}
 .lp h2{font-size:22px}
 .related_link {font-size: 18px;}
-
+.amp-logo h1 {font-size: 18px;}
 }
 
 /****
