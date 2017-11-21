@@ -277,6 +277,14 @@ background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?
 .amp-comment-button a:hover:before,.amp-comment-button a:focus:before,.amp-comment-button a:active:before{-webkit-transform:scaleX(1);transform:scaleX(1)}
 <?php } ?>
 
+.redux-preview-image {
+    max-height: 250px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #e3e3e3;
+    background: #f7f7f7;
+    border-radius: 3px;
+}
 @media (max-width:768px){
 .single .amp-featured-image amp-img{width:175%;height:100%}
 .rlp ul li {width: 100%;float: none}
@@ -294,7 +302,12 @@ background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?
 .single .loop-category:after{top:16px}
 .lp h2{margin:25px 0px 0px 0px}
 .lp p{font-size:13px;color:#fffc;}
-.amp-logo h1 {font-size: 20px;}
+.amp-logo h1 {
+    font-size: 21px;
+    position: relative;
+    top: 14px;
+    margin: 0 0 0 5px;
+}
 .amp-sidebar-button {top: 3px;}
 }
 
@@ -303,7 +316,6 @@ background: <?php echo $redux_builder_amp['minimalblog-color-scheme'] ['rgba'] ?
 .lp-list:hover .loop-category:after{top:150%}
 .lp h2{font-size:22px}
 .related_link {font-size: 18px;}
-.amp-logo h1 {font-size: 18px;}
 }
 
 /****
