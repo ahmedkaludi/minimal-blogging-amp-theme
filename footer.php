@@ -26,3 +26,4 @@
 <?php amp_menu(); ?>
 <?php amp_search();?>
 <?php amp_sidebar(['action'=>'end']); ?>
+<?php amp_footer_core(); ?>
