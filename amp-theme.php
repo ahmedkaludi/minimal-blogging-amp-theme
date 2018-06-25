@@ -3,7 +3,7 @@
 Plugin Name: Minimal Blogging Theme for AMP
 Plugin URI: https://ampforwp.com/demo/minimal-blog/amp/
 Description: Create a Minimal Blogging AMP theme with ease.
-Version: 1.1
+Version: 1.2
 Author: AMPforWP Team
 Author URI: http://ampforwp.com
 License: GPL2
