@@ -13,5 +13,6 @@ AMP: Minimal blogging
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
 // Define the Folder of the theme.
-define('AMPFORWP_TECH_MAGAZINE_THEME', plugin_dir_path( __FILE__ )); 
-require_once( AMPFORWP_TECH_MAGAZINE_THEME . '/minimal_blog_options.php');
+if(!defined('AMPFORWP_MINIMAL_MAGAZINE_THEME')) {
+define('AMPFORWP_MINIMAL_MAGAZINE_THEME', plugin_dir_path( __FILE__ )); }
+require_once( AMPFORWP_MINIMAL_MAGAZINE_THEME . 'minimal_blog_options.php');
