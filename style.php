@@ -110,7 +110,7 @@ amp-sidebar{background:#333;width:100%;padding-left:20%;padding-right:10%;paddin
 .amp-social li:before{color:#000;transition: all 0.3s ease-in-out 0s;-webkit-transition: all 0.3s ease-in-out 0s;-moz-transition: all 0.3s ease-in-out 0s;-ms-transition: all 0.3s ease-in-out 0s;-o-transition: all 0.3s ease-in-out 0s;}
 .amp-social{display:block;padding:0 10%; margin-top:60px;}
 .amp-social li{font-size:18px;margin:0 10px 10px 0}
-.icon-facebook:before,.icon-google-plus:before,.icon-instagram:before,.icon-linkedin:before,.icon-pinterest:before,.icon-reddit-alien:before,.icon-snapchat-ghost:before,.icon-tumblr:before,.icon-twitter:before,.icon-vk:before,.icon-youtube-play:before{background:0 0}
+.icon-facebook:before,.icon-instagram:before,.icon-linkedin:before,.icon-pinterest:before,.icon-reddit-alien:before,.icon-snapchat-ghost:before,.icon-tumblr:before,.icon-twitter:before,.icon-vk:before,.icon-youtube-play:before{background:0 0}
 .rts{font-size:.5rem;margin-top:30px;}
 .rts a{color:#000;text-decoration:underline}
 .footer .amp-sidebar-toggle{display:none}
